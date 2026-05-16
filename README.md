@@ -48,6 +48,7 @@ The automation framework was designed with a strong focus on:
 - Pytest
 - Requests
 - GitHub Actions
+- pytest-html
 
 ---
 
@@ -151,6 +152,16 @@ pytest tests/ui -v
 ```bash
 pytest tests/api -v
 ```
+
+---
+
+## Generate HTML Test Report
+
+```bash
+pytest --html=reports/report.html --self-contained-html
+```
+
+Generated reports are stored inside the `reports/` directory.
 
 ---
 
